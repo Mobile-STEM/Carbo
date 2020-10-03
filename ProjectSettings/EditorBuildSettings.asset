@@ -66,10 +66,10 @@ EditorBuildSettings:
     path: Assets/Scenes/FaceTracking/WorldCameraWithUserFacingFaceTracking.unity
     guid: ecea31d2ea5464e52bedb91fa1fcb6bb
   - enabled: 0
-    path: Assets/Scenes/HumanTracking/HumanBodyTracking2D.unity
+    path: 
     guid: b2551dd1f69e7446e9093f0f38e03160
   - enabled: 0
-    path: Assets/Scenes/HumanTracking/HumanBodyTracking3D.unity
+    path: 
     guid: 9fc1f5ed98d414310a8b9e659c295d7c
   - enabled: 0
     path: Assets/Scenes/ImageTracking/BasicImageTracking/BasicImageTracking.unity
@@ -131,6 +131,9 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Prefabs/LowPolyEarth/Demo_LowPolyEarth.unity
     guid: e0ecf4acd7a83df42b8568bb8101015c
+  - enabled: 1
+    path: Assets/Scenes/Molecules/Molecules.unity
+    guid: 939ce3051c04fa04a98bb466ceef7aeb
   m_configObjects:
     UnityEditor.XR.ARCore.ARCoreSettings: {fileID: 11400000, guid: f8ce26fe3bc69499b9be4b2378e97a94,
       type: 2}
