@@ -24,12 +24,10 @@ public class UpdateText : MonoBehaviour
     {
         nextButton.onClick.AddListener(() => OnNextButtonClicked());
         backButton.onClick.AddListener(() => OnBackButtonClicked());
-        Console.WriteLine("Button listeners added.");
 
         if (arrayPosition == 0)
         {
             backButton.gameObject.SetActive(false);
-            Console.WriteLine("back button set to false");
         }
 
         if (nextButtonText == null)
