@@ -253,7 +253,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4312872067317366, guid: c6ea123424756a54c81d0104ef48609c, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -0.297
       objectReference: {fileID: 0}
     - target: {fileID: 4312872067317366, guid: c6ea123424756a54c81d0104ef48609c, type: 3}
       propertyPath: m_LocalRotation.x
@@ -326,7 +326,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
   m_AnchoredPosition: {x: -90, y: 0}
-  m_SizeDelta: {x: 75, y: 75}
+  m_SizeDelta: {x: 65, y: 65}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &533176881
 MonoBehaviour:
@@ -500,11 +500,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4384559386738050, guid: 1f3a4ff90f097af44b1ed329f8ed09b9, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.06
+      value: 2.718
       objectReference: {fileID: 0}
     - target: {fileID: 4384559386738050, guid: 1f3a4ff90f097af44b1ed329f8ed09b9, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.034
       objectReference: {fileID: 0}
     - target: {fileID: 4384559386738050, guid: 1f3a4ff90f097af44b1ed329f8ed09b9, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1321,7 +1321,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
   m_AnchoredPosition: {x: 15, y: 0}
-  m_SizeDelta: {x: 75, y: 75}
+  m_SizeDelta: {x: 65, y: 65}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1522918976
 MonoBehaviour:
@@ -1548,7 +1548,7 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1
+  m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.802082
@@ -1587,7 +1587,7 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_RenderingLayerMask: 1
-  m_Lightmapping: 4
+  m_Lightmapping: 2
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
@@ -1605,8 +1605,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2115488174}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: -29, y: 3, z: -17}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1.25, y: 3, z: 0.72}
+  m_LocalScale: {x: 100, y: 100, z: 100}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 1
