@@ -8,7 +8,6 @@ public class ARTextUpdate : MonoBehaviour
 {
     public Button backButton;
     public Button nextButton;
-    public Text nextButtonText;
     public Text text;
 
     public string[] textArray;
@@ -28,6 +27,13 @@ public class ARTextUpdate : MonoBehaviour
 
     void OnNextButtonClicked()
     {
+        arrayPosition++;
+        text.text = textArray[arrayPosition];
+
+        if (arrayPosition == (textArray.Length - 1))
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Molecules");
+        }
     }
 
     void OnBackButtonClicked()
