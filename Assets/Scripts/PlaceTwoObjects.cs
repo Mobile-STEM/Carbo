@@ -16,28 +16,45 @@ namespace UnityEngine.XR.ARFoundation.Samples
         public Text text;
         public string[] textArray;
         public int arrayPosition = 0;
+        private bool enter = false;
 
         [SerializeField]
-        [Tooltip("Instantiates this prefab on a plane at the touch location.")]
         GameObject m_carbonModelPrefab;
 
         [SerializeField]
-        [Tooltip("Instantiates this prefab on a plane at the touch location.")]
-        GameObject m_PlacedPrefab;
+        GameObject m_treePrefab;
+
+        [SerializeField]
+        GameObject m_mediumTreePrefab;
+
+        [SerializeField]
+        GameObject m_tallTreePrefab;
 
         /// <summary>
         /// The prefab to instantiate on touch.
         /// </summary>
-        public GameObject placedPrefab
+        public GameObject treePrefab
         {
-            get { return m_PlacedPrefab; }
-            set { m_PlacedPrefab = value; }
+            get { return m_treePrefab; }
+            set { m_treePrefab = value; }
         }
 
         public GameObject carbonModelPrefab
         {
             get { return m_carbonModelPrefab; }
             set { m_carbonModelPrefab = value; }
+        }
+
+        public GameObject mediumTreePrefab
+        {
+            get { return m_mediumTreePrefab; }
+            set { m_mediumTreePrefab = value; }
+        }
+
+        public GameObject tallTreePrefab
+        {
+            get { return m_tallTreePrefab; }
+            set { m_tallTreePrefab = value; }
         }
 
         [SerializeField]
@@ -105,7 +122,9 @@ namespace UnityEngine.XR.ARFoundation.Samples
         // waits a couple of seconds before giving other model
         IEnumerator WaitOneSecond()
         {
-            yield return new WaitForSecondsRealtime(4);
+            enter = true;
+            yield return new WaitForSeconds(2);
+            enter = false;
         }
 
         /// <summary>
@@ -119,6 +138,34 @@ namespace UnityEngine.XR.ARFoundation.Samples
 
             return planeManager.trackables.count > 0;
         }
+
+/*        IEnumerator FadeOut(GameObject deletablePrefab)
+        {
+            while (deletablePrefab.material.color.a > 0)
+            {
+                Color colorObject = deletablePrefab.material.color;
+                float fadeAmount = objectColor.a - (fadeSpeed * Time.deltaTime);
+
+                objectColor = new ConsoleColor(ObjectColor.r, objectColor.g, objectColor.b, fadeAmount);
+                deletablePrefab.material.color = objectColor;
+                yield return null;
+            }
+            spawnedObject = Instantiate(m_mediumTreePrefab, spawnedObject.transform.position, spawnedObject.transform.rotation);
+            Destroy(deletablePrefab);
+        }
+
+        IEnumerator FadeIn(GameObject createPrefab)
+        {
+            while (createPrefab.material.color.a < 1)
+            {
+                Color colorObject = createPrefab.material.color;
+                float fadeAmount = objectColor.a + (fadeSpeed * Time.deltaTime);
+
+                objectColor = new ConsoleColor(ObjectColor.r, objectColor.g, objectColor.b, fadeAmount);
+                createPrefab.material.color = objectColor;
+                yield return null;
+            }
+        }*/
 
         void Update()
         {
@@ -158,17 +205,24 @@ namespace UnityEngine.XR.ARFoundation.Samples
                 }
                 arrayPosition++;
                 text.text = textArray[arrayPosition];
-                StopCoroutine(WaitOneSecond());    // Interrupt in case it's running
-                StartCoroutine(WaitOneSecond());
-            } else if (arrayPosition == 2 || arrayPosition == 5 || arrayPosition == 9)
+
+                if (!enter)
+                {
+                    StartCoroutine(WaitOneSecond());
+                }
+
+            } else if (arrayPosition == 2 || arrayPosition == 5 || arrayPosition == 8)
             {
                 nextButton.gameObject.SetActive(true);
+
+                if (!enter)
+                {
+                    StartCoroutine(WaitOneSecond());
+                }
             }
-            else if (arrayPosition == 4 || arrayPosition == 8)
+            else if (arrayPosition == 4 || arrayPosition == 7)
             {
                 nextButton.gameObject.SetActive(false);
-                StopCoroutine(WaitOneSecond());    // Interrupt in case it's running
-                StartCoroutine(WaitOneSecond());
                 if (m_RaycastManager.Raycast(touchPosition, s_Hits, TrackableType.PlaneWithinPolygon))
                 {
                     // Raycast hits are sorted by distance, so the first one
@@ -177,24 +231,47 @@ namespace UnityEngine.XR.ARFoundation.Samples
 
                     if (spawnedObject == null)
                     {
-                        spawnedObject = Instantiate(m_PlacedPrefab, hitPose.position, hitPose.rotation);
+                        spawnedObject = Instantiate(m_treePrefab, hitPose.position, hitPose.rotation);
                     }
                     else
                     {
+                        if (!enter)
+                        {
+                            StartCoroutine(WaitOneSecond());
+                        }
                         spawnedObject.transform.position = hitPose.position;
 
-                        if ((Mathf.Abs(spawnedObject.transform.position.x - carbonModel.transform.position.x) < 1) && (Mathf.Abs(spawnedObject.transform.position.y - carbonModel.transform.position.y) < 1) && (Mathf.Abs(spawnedObject.transform.position.z - carbonModel.transform.position.z) < 1)) {
-                            StopCoroutine(WaitOneSecond());    // Interrupt in case it's running
-                            StartCoroutine(WaitOneSecond());
+                        // must be in .2 x .2 x .2 area cube
+                        if (arrayPosition == 7 && (Mathf.Abs(spawnedObject.transform.position.x - carbonModel.transform.position.x) < .3) && (Mathf.Abs(spawnedObject.transform.position.y - carbonModel.transform.position.y) < .3) && (Mathf.Abs(spawnedObject.transform.position.z - carbonModel.transform.position.z) < .3)) {
+                            if (!enter)
+                            {
+                                StartCoroutine(WaitOneSecond());
+                            }
+                            arrayPosition++;
+                            text.text = textArray[arrayPosition];
+                        } else if (arrayPosition == 4)
+                        {
                             arrayPosition++;
                             text.text = textArray[arrayPosition];
                         }
                     }
                 }
 
+            } else if (arrayPosition == 10)
+            {
+                Destroy(spawnedObject);
+                spawnedObject = Instantiate(m_mediumTreePrefab, spawnedObject.transform.position, spawnedObject.transform.rotation);
+            } else if (arrayPosition == 11)
+            {
+                Destroy(spawnedObject);
+                spawnedObject = Instantiate(m_tallTreePrefab, spawnedObject.transform.position, spawnedObject.transform.rotation);
             }
             else if (arrayPosition == (textArray.Length - 1))
             {
+                if (!enter)
+                {
+                    StartCoroutine(WaitOneSecond());
+                }
                 nextButton.gameObject.SetActive(false);
             }
         }

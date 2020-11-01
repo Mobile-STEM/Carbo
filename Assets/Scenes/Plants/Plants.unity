@@ -388,32 +388,39 @@ MonoBehaviour:
   text: {fileID: 1392799653}
   textArray:
   - Please move your camera around until you see a layer of dots
-  - Please tap on the screen to place the carbon item
+  - Please tap on the screen to place the carbon molecule.
   - Thank you for choosing to follow my journey!
   - ' I am feeling quite lonely without my plant friends. I want you to create an
     environment with a plant.'
-  - Tap on the screen to bring my plant friend over
-  - My plant friend is so excited that we are now close! Now, why do plants need
-    me to survive?
+  - Tap on the screen to bring my plant friend over.
   - Yay! I am excited to see my plant friend! She is also very excited to see me
     because she is very hungry, and luckily I am her food source.
   - Similar to how your body needs food in order to live and survive, my plant friend
     needs me to do the same.
-  - I want you to drag me to me so she can use my resources.
+  - I want you to drag my plant friend closer to me. This is so that I can be closer
+    to my plant friend, and she can use my resources
   - My plant friend is so excited that we are now close! Now, why do plants need
     me to survive?
   - Plants need carbon dioxide to grow! When plants take in CO2, they will transform
     it to make building blocks (like glucose, amino acid, ATP, etc).
   - These building blocks are what allow the plant to grow and make its structures
-    like the leaves and stems
+    like the leaves and stems.
   - When plants use me and other carbon molecules, they also release oxygen for animals
-    to respire
+    to respire.
+  - This is why it is so important to have plants in our environment because they
+    are able to release oxygen for you to breathe, but they also ensure that I am
+    not trapped in the environment and contribute to climate change.
+  - 'You will learn more about this from my other CO2 friend if you haven''t already! '
   - You will be able to see how my other CO2 friends interact with the environment
     by selecting another molecule! Thank you for following my journey!
   arrayPosition: 0
   m_carbonModelPrefab: {fileID: 6069125037130143767, guid: 9dc3a7445837d480ea5558e335f5725e,
     type: 3}
-  m_PlacedPrefab: {fileID: 1080193629551472, guid: a37a6c622b1b6bd42853438589a6e2e3,
+  m_treePrefab: {fileID: 1840113873042854, guid: 92da00bc28c06e24d88859c4a68da80f,
+    type: 3}
+  m_mediumTreePrefab: {fileID: 1069889647584728, guid: 97406012b0cb6ec44966876f9b290bd2,
+    type: 3}
+  m_tallTreePrefab: {fileID: 1162052676298782, guid: 7dc76a1370fbe2b4fa2b036f856e6878,
     type: 3}
   m_PlaneManager: {fileID: 463775316}
 --- !u!114 &463775315
@@ -954,7 +961,7 @@ Transform:
   m_GameObject: {fileID: 1640024880}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1000, y: 10000, z: 10000}
   m_Children: []
   m_Father: {fileID: 463775313}
   m_RootOrder: 1
@@ -971,13 +978,13 @@ Light:
   m_Type: 3
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
-  m_Range: 100
+  m_Intensity: 4
+  m_Range: 1000
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -1012,7 +1019,7 @@ Light:
   m_RenderingLayerMask: 1
   m_Lightmapping: 2
   m_LightShadowCasterMode: 0
-  m_AreaSize: {x: 100, y: 100}
+  m_AreaSize: {x: 1000, y: 1000}
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
