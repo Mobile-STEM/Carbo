@@ -3,17 +3,24 @@
 ## Table of Contents
 
 * [About](#about)
+* [Background](#background)
 * [Technologies](#technologies)
 * [Guides Followed](#guides-followed)
-* [Learning Experiences](#learing-experiences)
+* [Learning Experiences](#learning-experiences)
 * [Setup](#setup)
 * [Running the Project](#running-the-project)
-* [Notes](#Notes)
-* [UI](#UI)
+* [Project Structure](#project-structure)
+* [Notes](#notes)
+* [Students](#students)
+* [UI](#ui)
 
 ## About
 
 CarbO is an augmented reality (AR) app that shows the journey of carbon molecules during the Carbon Cycle. This application is intended to solve the abstractness problem in Biology because it can be difficult for students to understand how certain molecules, like carbon, play roles in our everyday world. 
+
+## Background
+
+This application was created for the Mobile STEM VIP class. Yaroslava and Tana both had a goal to create a virtual reality or augumented reality project, thus Carbo was created. 
 
 ## Technologies
 
@@ -55,5 +62,14 @@ Run the project with File -> Build and Run or CTRL + B.
 ## Notes
 * Since AR and Unity is constantly changing, future students will need to update the project as time goes on. Please note, that the application may not work on future versions without adjusting.
 
-## UI
+## Students
 
+Future Mobile STEM Vip students, please feel free to use this code to develop your own augumented reality project. 
+
+## UI
+![Carbo Screen 1](https://github.com/Mobile-STEM/Carbo/blob/main/Assets/Images/CarboPage1.PNG?raw=true "Carbo Screen 1")
+![Carbo Screen 2](https://github.com/Mobile-STEM/Carbo/blob/main/Assets/Images/CarboPage1.PNG?raw=true "Carbo Screen 2")
+![Carbo Screen 3](https://github.com/Mobile-STEM/Carbo/blob/main/Assets/Images/CarboPage1.PNG?raw=true "Carbo Screen 3")
+![Carbo Screen 4](https://github.com/Mobile-STEM/Carbo/blob/main/Assets/Images/CarboPage1.PNG?raw=true "Carbo Screen 4")
+![Carbo Screen 5](https://github.com/Mobile-STEM/Carbo/blob/main/Assets/Images/CarboPage1.PNG?raw=true "Carbo Screen 5")
+![Carbo Screen 6](https://github.com/Mobile-STEM/Carbo/blob/main/Assets/Images/CarboPage1.PNG?raw=true "Carbo Screen 6")
