@@ -414,6 +414,7 @@ MonoBehaviour:
   - You will be able to see how my other CO2 friends interact with the environment
     by selecting another molecule! Thank you for following my journey!
   arrayPosition: 0
+  fadeTreeAway: FadeTreeAway
   m_carbonModelPrefab: {fileID: 6069125037130143767, guid: 9dc3a7445837d480ea5558e335f5725e,
     type: 3}
   m_treePrefab: {fileID: 1840113873042854, guid: 92da00bc28c06e24d88859c4a68da80f,

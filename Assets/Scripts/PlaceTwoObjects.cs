@@ -17,6 +17,8 @@ namespace UnityEngine.XR.ARFoundation.Samples
         public string[] textArray;
         public int arrayPosition = 0;
         private bool enter = false;
+        public string fadeTreeAway;
+        Animator anim;
 
         [SerializeField]
         GameObject m_carbonModelPrefab;
@@ -86,6 +88,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
             nextButton.onClick.AddListener(() => OnNextButtonClicked());
             backButton.onClick.AddListener(() => OnBackButtonClicked());
             nextButton.gameObject.SetActive(false);
+            anim = GetComponent<Animator>();
         }
 
         void OnNextButtonClicked()
@@ -259,6 +262,7 @@ namespace UnityEngine.XR.ARFoundation.Samples
 
             } else if (arrayPosition == 10)
             {
+                anim.Play(fadeTreeAway);
                 Destroy(spawnedObject);
                 spawnedObject = Instantiate(m_mediumTreePrefab, spawnedObject.transform.position, spawnedObject.transform.rotation);
             } else if (arrayPosition == 11)
