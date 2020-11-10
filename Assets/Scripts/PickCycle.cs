@@ -43,6 +43,9 @@ public class PickCycle : MonoBehaviour
         if (currentCarbonCycle == 0)
         {
             UnityEngine.SceneManagement.SceneManager.LoadScene("Plants");
+        } else if (currentCarbonCycle == 1)
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene("Fossils");
         }
     }
 

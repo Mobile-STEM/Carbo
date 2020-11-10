@@ -380,47 +380,43 @@ MonoBehaviour:
   m_GameObject: {fileID: 463775312}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 645bf44119805d2408179b3f9ff0a5ae, type: 3}
+  m_Script: {fileID: 11500000, guid: df996cc8dc562c54cb229aaf0e161f07, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   backButton: {fileID: 1661662930}
   nextButton: {fileID: 809411721}
   text: {fileID: 1392799653}
   textArray:
-  - Please move your camera around until you see a layer of dots
+  - Please move your camera around until you see a layer of dots.
   - Please tap on the screen to place the carbon molecule.
-  - Thank you for choosing to follow my journey!
-  - ' I am feeling quite lonely without my plant friends. I want you to create an
-    environment with a plant.'
-  - Tap on the screen to bring my plant friend over.
-  - Yay! I am excited to see my plant friend! She is also very excited to see me
-    because she is very hungry, and luckily I am her food source.
-  - Similar to how your body needs food in order to live and survive, my plant friend
-    needs me to do the same.
-  - I want you to drag my plant friend closer to me. This is so that I can be closer
-    to my plant friend, and she can use my resources
-  - My plant friend is so excited that we are now close! Now, why do plants need
-    me to survive?
-  - Plants need carbon dioxide to grow! When plants take in CO2, they will transform
-    it to make building blocks (like glucose, amino acid, ATP, etc).
+  - Thank you for following my journey! I have a busy day ahead of me!
+  - Please tap on the screen to place dirt!
+  - I want you to drag me to the dirt!
+  - The dirt is my home! As much as I enjoy being at home in the dirt and doing nothing!
+    I want to get to work!
+  - Please tap on the screen to place the factory!
+  - I work in the factories by giving them energy, which is called fossil fuel, to
+    operate.
+  - 'Now, I want you to drag me to the factory so I can get to work! '
+  - In the real world, humans don't drag me from the dirt to the factory.
+  - 'Instead, humans dig me out of the ground and use me to help them in the factories! '
   - These building blocks are what allow the plant to grow and make its structures
     like the leaves and stems.
-  - When plants use me and other carbon molecules, they also release oxygen for animals
-    to respire.
-  - This is why it is so important to have plants in our environment because they
-    are able to release oxygen for you to breathe, but they also ensure that I am
-    not trapped in the environment and contribute to climate change.
-  - 'You will learn more about this from my other CO2 friend if you haven''t already! '
+  - When they use my energy by burning me! Don't worry, this is not harming me because
+    I am released back into the atmosphere!
+  - The black smoke from the factory is smog. This is how I am able to be back into
+    the atmosphere and no longer have to be in the dirt!
+  - However, this is a negative effect for you because when I am back in the atmosphere,
+    I absorb the heat from the sun. This is what contributes to climate change and
+    heating of your planet
   - You will be able to see how my other CO2 friends interact with the environment
     by selecting another molecule! Thank you for following my journey!
   arrayPosition: 0
-  m_carbonModelPrefab: {fileID: 6069125037130143767, guid: 9dc3a7445837d480ea5558e335f5725e,
+  m_carbonModelPrefab: {fileID: 835107151907069848, guid: 16d9420777e174003ad9349cef213d16,
     type: 3}
-  m_treePrefab: {fileID: 1840113873042854, guid: 92da00bc28c06e24d88859c4a68da80f,
+  m_factoryPrefab: {fileID: 1750580653595524, guid: 1baf784451a71924790d4ffee132ac1c,
     type: 3}
-  m_mediumTreePrefab: {fileID: 1069889647584728, guid: 97406012b0cb6ec44966876f9b290bd2,
-    type: 3}
-  m_tallTreePrefab: {fileID: 1162052676298782, guid: 7dc76a1370fbe2b4fa2b036f856e6878,
+  m_dirtPrefab: {fileID: 1421520055873654, guid: 8584a5fd3ba9082448e1e0dd24ea9ff8,
     type: 3}
   m_PlaneManager: {fileID: 463775316}
 --- !u!114 &463775315
@@ -451,7 +447,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_PlanePrefab: {fileID: 1585201990951412, guid: 617b10198100d44078c5e70d97423117,
     type: 3}
-  m_DetectionMode: -1
+  m_DetectionMode: 1
 --- !u!114 &463775317
 MonoBehaviour:
   m_ObjectHideFlags: 0
