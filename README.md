@@ -1,4 +1,4 @@
-# CarbO
+# Carb⟲
 
 ## Table of Contents
 
@@ -16,7 +16,7 @@
 
 ## About
 
-CarbO is an augmented reality (AR) app that shows the journey of carbon molecules during the Carbon Cycle. This application is intended to solve the abstractness problem in Biology because it can be difficult for students to understand how certain molecules, like carbon, play roles in our everyday world. 
+Carb⟲ is an augmented reality (AR) app that shows the journey of carbon molecules during the Carbon Cycle. This application is intended to solve the abstractness problem in Biology because it can be difficult for students to understand how certain molecules, like carbon, play roles in our everyday world. 
 
 ## Background
 
@@ -60,11 +60,11 @@ This application was created for the Mobile STEM VIP class. Yaroslava and Tana b
 Run the project with File -> Build and Run or CTRL + B.
 
 ## Notes
-* Since AR and Unity is constantly changing, future students will need to update the project as time goes on. Please note, that the application may not work on future versions without adjusting.
+* Since AR and Unity is constantly changing, future students will need to update the project as time goes on. Please note, that the application may not work on future versions without adjustment.
 
 ## Students
 
-Future Mobile STEM Vip students, please feel free to use this code to develop your own augumented reality project. 
+Future Mobile STEM Vip students, please feel free to use this code to develop your own augumented reality project or continue the progress of the application. 
 
 ## UI
 ![Carbo Screen 1](https://github.com/Mobile-STEM/Carbo/blob/main/Assets/Images/CarboPage1.PNG?raw=true "Carbo Screen 1")
