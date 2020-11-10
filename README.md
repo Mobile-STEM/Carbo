@@ -35,6 +35,7 @@ This application was created for the Mobile STEM VIP class. Yaroslava and Tana b
 * [Linkedin Learning: Learn the basics of creating AR in Unity](https://www.linkedin.com/learning/unity-ar-visualization-01-basic-concepts/learn-the-basics-of-creating-ar-in-unity?u=2163426)
 * [Getting Started With AR In 2020 New Video - Unity MARS - ARFoundation - Getting Started with AR](https://www.youtube.com/watch?v=vdirZZt0HTg)
 * [Updating Display Value Using Events in Unity](https://www.youtube.com/watch?v=jS2zpYLZZ9w&list=LL&index=3&t=4s)
+* [Introduction of 3D Modeling] (https://www.linkedin.com/learning/introduction-to-3d-2?trk=learning-serp_learning_search-card&upsellOrderOrigin=default_guest_learning)
 
 ## Learning Experiences
 
