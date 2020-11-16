@@ -20,7 +20,9 @@ Carb⟲ is an augmented reality (AR) app that shows the journey of carbon molecu
 
 ## Background
 
-This application was created for the Mobile STEM VIP class. Yaroslava and Tana both had a goal to create a virtual reality or augumented reality project, thus Carbo was created. 
+This application was created for the Mobile STEM VIP class. Yaroslava and Tana both had a goal to create a virtual reality or augumented reality project, thus Carbo was created.
+
+**Please view the Wiki for more information.**
 
 ## Technologies
 
